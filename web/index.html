@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/" />
+
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="description" content="A new Flutter project." />
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="rezzy_pemob" />
+    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <title>rezzy_pemob</title>
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <!-- Add this line for Realtime Database -->
+
+    <script>
+      // Initialize Firebase
+      const firebaseConfig = {
+        apiKey: "AIzaSyA4zZBel2WmOSacKWWBcTQ2-SX6dVCkzjg",
+        authDomain: "pemmob-48aed.firebaseapp.com",
+        databaseURL:
+          "https://pemmob-48aed-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "pemmob-48aed",
+        storageBucket: "pemmob-48aed.appspot.com",
+        messagingSenderId: "743227419762",
+        appId: "1:743227419762:web:ef2c7e3db4f24f099f26eb",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Flutter initialization script -->
+    <script src="flutter.js" defer></script>
+
+    <script>
+      const serviceWorkerVersion = "1.0.0"; // Tentukan versi service worker sesuai kebutuhan
+      window.addEventListener("load", function (ev) {
+        // Download main.dart.js
+        _flutter.loader.loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: serviceWorkerVersion,
+          },
+          onEntrypointLoaded: function (engineInitializer) {
+            engineInitializer.initializeEngine().then(function (appRunner) {
+              appRunner.runApp();
+            });
+          },
+        });
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "743227419762",
+    "firebase_url": "https://pemmob-48aed-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pemmob-48aed",
+    "storage_bucket": "pemmob-48aed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743227419762:android:cb83e30658cbb64b9f26eb",
+        "android_client_info": {
+          "package_name": "com.example.rezzy_pemob"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsvEjLQpJMPgy5zSxiNO3w0-g3TILX4JI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
